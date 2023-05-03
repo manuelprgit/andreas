@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img {
+  width: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+
+.btn {
+  padding: 24px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-bottom: 28px;
+  color: white;
+}
+
+.btn-success {
+  background-color: #847c32;
+}
+
+.btn-secondary-successs {
+  background-color: white;
+  color: #847c32;
+  border: solid 2px #847c32;
+  margin-top: 22px;
+}
+
+.create-password-content, .edit-password-content {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.create-password-content .form-container, .edit-password-content .form-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 330px;
+}
+.create-password-content .form-container .logo-content, .edit-password-content .form-container .logo-content {
+  width: 250px;
+  margin-bottom: 48px;
+  justify-self: center;
+}
+.create-password-content .form-container .text-create-pass, .edit-password-content .form-container .text-create-pass {
+  text-align: center;
+}
+.create-password-content .form-container .text-create-pass .title, .edit-password-content .form-container .text-create-pass .title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.create-password-content .form-container .text-create-pass .sub-title, .edit-password-content .form-container .text-create-pass .sub-title {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  color: #8e8e8e;
+}
+.create-password-content .form-container .text-create-pass .title-account, .edit-password-content .form-container .text-create-pass .title-account {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 48px;
+}
+.create-password-content .form-container .emil-img, .edit-password-content .form-container .emil-img {
+  justify-self: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  display: grid;
+  place-items: center;
+  margin-bottom: 32px;
+}
+.create-password-content .form-container .input-contents, .edit-password-content .form-container .input-contents {
+  display: flex;
+  flex-direction: column;
+}
+.create-password-content .form-container .input-contents label, .edit-password-content .form-container .input-contents label {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.create-password-content .form-container .input-contents input, .edit-password-content .form-container .input-contents input {
+  border: none;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  height: 30px;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.create-password-content .form-container .input-contents a, .edit-password-content .form-container .input-contents a {
+  color: white;
+}
+.create-password-content .form-container .resend, .edit-password-content .form-container .resend {
+  font-size: 14px;
+  text-align: center;
+  color: #8e8e8e;
+}
+.create-password-content .form-container .resend a, .edit-password-content .form-container .resend a {
+  color: #847c32;
+  font-weight: 600;
+  text-decoration: none;
+}
+.create-password-content .form-container a, .edit-password-content .form-container a {
+  color: #847c32;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.edit-password-content .input-contents p {
+  margin-bottom: 18px;
+  margin-left: 2px;
+  color: #8e8e8e;
+}
+
+@media (min-width: 640px) {
+  .logo-content {
+    display: none !important;
+  }
+  .btn-secondary-successs {
+    margin-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  .logo-content {
+    margin-bottom: 24px !important;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

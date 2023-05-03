@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$very-light-pink: #c7c7c7;
+$smooth-gray: #8e8e8e;
+$text-input-field: #f7f7f7;
+$primary-color: #847c32;
+$secondary-color: #829a7c;
+
+$white: white;
+$black: black;
+
+$nunito-font: 'Nunito', sans-serif;
+$poppins-font: 'Poppins', sans-serif;
+
+$sm: 12px;
+$m: 14px;
+$md: 16px;
+$lg: 18px;
+
+//#region reset page
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+img {
+    width: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+//#endregion reset page
+
+@mixin displayFlex($justContent: null, $aliItem: null, $column: null) {
+    display: flex;
+    justify-content: $justContent;
+    align-items: $aliItem;
+    flex-direction: $column;
+}
+
+body {
+    font-family: $nunito-font;
+    margin: 0;
+}
+
+.btn {
+    padding: 24px;
+    border: none;
+    font-size: $md;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-bottom: 28px;
+    color: $white;
+}
+
+.btn-success {
+    background-color: $primary-color;
+}
+
+.btn-secondary-successs {
+    background-color: $white;
+    color: $primary-color;
+    border: solid 2px $primary-color;
+    margin-top: 22px;
+}
+
+
+.create-password-content {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    .form-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 330px;
+
+        .logo-content {
+            width: 250px;
+            margin-bottom: 48px;
+            justify-self: center;
+        }
+
+        .text-create-pass {
+            text-align: center;
+
+            .title {
+                font-size: $lg;
+                font-weight: 800;
+                margin-bottom: $sm;
+            }
+
+            .sub-title {
+                font-size: $lg;
+                font-weight: 300;
+                margin-bottom: 32px;
+                color: $smooth-gray;
+            }
+
+            .title-account{
+                text-align: start;
+                font-size: 20px;
+                font-weight: 800;
+                margin-bottom: 48px;
+            }
+        }
+
+        .emil-img {
+            justify-self: center;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: $text-input-field;
+            display: grid;
+            place-items: center;
+            margin-bottom: 32px
+        }
+
+        .input-contents {
+            @include displayFlex(null, null, column);
+            
+            label {
+                font-size: $lg;
+                font-weight: 800;
+                margin-bottom: 6px;
+            }
+
+            input {
+                border: none;
+                border-radius: 8px;
+                background-color: $text-input-field;
+                height: 30px;
+                padding: 8px;
+                font-size: $md;
+                margin-bottom: 28px;
+            }
+
+            a{
+                color: $white;
+            }
+
+        }
+
+        .resend {
+            font-size: $m;
+            text-align: center;
+            color: $smooth-gray;
+
+            a {
+                color: $primary-color;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            text-align: center;
+            font-size: $m;
+            margin-bottom: 22px;
+        }
+
+    }
+}
+
+.edit-password-content{
+    @extend .create-password-content;
+    .input-contents{
+        p{
+            margin-bottom: 18px;
+            margin-left: 2px;
+            color: $smooth-gray;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .logo-content {
+        display: none !important; 
+    }
+
+    .btn-secondary-successs {
+        margin-top: 0;
+    }
+}
+@media (max-width: 640px){
+    .logo-content{
+        margin-bottom: 24px !important;
+    }
+}

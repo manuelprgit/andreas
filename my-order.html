@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav class="navar-desktop">
+        <div class="logo-content">
+            <img src="./SRC/IMG/logos/logo_andreas.png" alt="">
+        </div>
+        <ul class="menu-content">
+            <li>
+                <a href="" class="active">Todos</a>
+            </li>
+            <li>
+                <a href="">Desayunos</a>
+            </li>
+            <li>
+                <a href="">Almuerzos</a>
+            </li>
+            <li>
+                <a href="">Personales</a>
+            </li>
+            <li>
+                <a href="">Para 2</a>
+            </li>
+        </ul>
+        <div class="sub-menu-content">
+            <div class="personal-info">
+                <p>n.emmanuel@gamil.com</p>
+                <figure class="arrow">
+                    <img src="./SRC/SVG/flechita.svg" alt="">
+                </figure>
+            </div>
+            <figure class="shiping-cart">
+                <img src="./SRC/SVG/icon_shopping_cart.svg" alt="">
+            </figure>
+        </div>
+    </nav>
+
+    <div class="navar-mobile">
+        <div class="burger-content" id="burguer-menu">
+            <figure>
+                <img src="./SRC/SVG/icon_menu.svg" alt="">
+            </figure>
+        </div>
+        <h1 class="main-title">Mi orden</h1>
+        <a href="./my-order.html">
+            <figure class="shiping-cart">
+                <img src="./SRC/SVG/icon_shopping_cart.svg" alt="">
+            </figure>
+        </a>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li class="principal">
+                <p class="main-title">CATEGORIA</p>
+                <figure id="close-menu">
+                    <img src="./SRC/SVG/icon_close.png" alt="">
+                </figure>
+            </li>
+            <li>
+                <a href="/">Todos</a>
+            </li>
+            <li>
+                <a href="/">Desayunos</a>
+            </li>
+            <li>
+                <a href="/">Almuerzos</a>
+            </li>
+            <li>
+                <a href="/">Personales</a>
+            </li>
+            <li>
+                <a href="/">Para 2</a>
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li>
+                <a href="/">Mis ordenes</a>
+            </li>
+            <li>
+                <a href="/">Mi cuenta</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#">n.emmanuel@gmail.com</a>
+            </li>
+            <li>
+                <a href="./login.html">Cerrar sesion</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="context-menu-desktop">
+        <ul>
+            <li>
+                <a href="/" class="title">Mis ordenes</a>
+            </li>
+            <li>
+                <a href="/" class="title">Mi cuenta</a>
+            </li>
+            <li>
+                <a href="/" class="log-out">Cerrar sesion</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1>Mis ordenes</h1>
+            <div class="total-order-container">
+                <p class="cuantity">
+                    <span class="date">04-25-2021</span>
+                    <span class="total-articles">6 articulos</span>
+                </p>
+                <p class="total-price">$ 560.00</p>
+            </div> 
+            <div class="order-container">
+
+                <div class="article">
+                    <div class="img-content">
+                        <img src="./SRC/IMG/andreasKitchen/1.jpeg" alt="">
+                    </div>
+                    <p>Texto del aticulo</p>
+                    <p>$ 120.00</p>
+                </div>
+
+                <div class="article">
+                    <div class="img-content">
+                        <img src="./SRC/IMG/andreasKitchen/1.jpeg" alt="">
+                    </div>
+                    <p>Texto del aticulo</p>
+                    <p>$ 120.00</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
